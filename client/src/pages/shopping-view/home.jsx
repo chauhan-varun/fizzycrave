@@ -9,16 +9,21 @@ import {
   ChevronRightIcon,
   Coffee,
   Cookie,
-  IceCream,
+  Utensils,
   Images,
-  Milk,
-  Salad,
+  Leaf,
+  Apple,
   ShirtIcon,
   ShoppingBasket,
   Shirt,
   Heater,
   WashingMachine,
 } from "lucide-react";
+import picklesIcon from "../../assets/category-icons/pickles.svg";
+import namkeenIcon from "../../assets/category-icons/namkeen.svg";
+import masalaIcon from "../../assets/category-icons/masala.svg";
+import dryFruitsIcon from "../../assets/category-icons/dryfruits.svg";
+import snacksIcon from "../../assets/category-icons/snacks.svg";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -34,11 +39,11 @@ import ProductDetailsDialog from "@/components/shopping-view/product-details";
 import { getFeatureImages } from "@/store/common-slice";
 
 const categoriesWithIcon = [
-  { id: "drinks", label: "Drinks", icon: Coffee },
-  { id: "snacks", label: "Snacks", icon: Cookie },
-  { id: "desert", label: "Desert", icon: IceCream },
-  { id: "dairy", label: "Dairy", icon: Milk },
-  { id: "diet food", label: "Diet Food", icon: Salad },
+  { id: "pikles", label: "Pikles", iconSrc: picklesIcon },
+  { id: "namkeen", label: "Namkeen", iconSrc: namkeenIcon },
+  { id: "masala", label: "Masala", iconSrc: masalaIcon },
+  { id: "dry fruits", label: "Dry Fruits", iconSrc: dryFruitsIcon },
+  { id: "snacks", label: "Snacks", iconSrc: snacksIcon },
 ];
 
 const brandsWithIcon = [
@@ -176,7 +181,7 @@ function ShoppingHome() {
                 className="cursor-pointer hover:shadow-lg transition-shadow"
               >
                 <CardContent className="flex flex-col items-center justify-center p-6">
-                  <categoryItem.icon className="w-12 h-12 mb-4 text-primary" />
+                  <img src={categoryItem.iconSrc} className="w-12 h-12 mb-4" alt={categoryItem.label} />
                   <span className="font-bold">{categoryItem.label}</span>
                 </CardContent>
               </Card>

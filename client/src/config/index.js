@@ -58,11 +58,11 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "drinks", label: "Drinks" },
+      { id: "pikles", label: "Pikles" },
+      { id: "namkeen", label: "Namkeen" },
+      { id: "masala", label: "Masala" },
+      { id: "dry fruits", label: "Dry Fruits" },
       { id: "snacks", label: "Snacks" },
-      { id: "desert", label: "Desert" },
-      { id: "dairy", label: "Dairy" },
-      { id: "diet food", label: "Diet Food" },
     ],
   },
 
@@ -101,28 +101,28 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "drinks",
-    label: "Drinks",
+    id: "pikles",
+    label: "Pikles",
+    path: "/shop/listing",
+  },
+  {
+    id: "namkeen",
+    label: "Snacks",
+    path: "/shop/listing",
+  },
+  {
+    id: "masala",
+    label: "Masala",
+    path: "/shop/listing",
+  },
+  {
+    id: "dry fruits",
+    label: "Dry Fruits",
     path: "/shop/listing",
   },
   {
     id: "snacks",
     label: "Snacks",
-    path: "/shop/listing",
-  },
-  {
-    id: "desert",
-    label: "Desert",
-    path: "/shop/listing",
-  },
-  {
-    id: "dairy",
-    label: "Dairy",
-    path: "/shop/listing",
-  },
-  {
-    id: "diet food",
-    label: "Diet Food",
     path: "/shop/listing",
   },
   {
@@ -133,11 +133,11 @@ export const shoppingViewHeaderMenuItems = [
 ];
 
 export const categoryOptionsMap = {
-  drinks: "Drinks",
+  pikles: "Pikles",
+  namkeen: "Namkeen",
+  masala: "Masala",
+  dryFruits: "Dry Fruits",
   snacks: "Snacks",
-  desert: "Desert",
-  dairy: "Dairy",
-  diet: "Diet Food",
 };
 
 export const brandOptionsMap = {
@@ -151,11 +151,11 @@ export const brandOptionsMap = {
 
 export const filterOptions = {
   category: [
-    { id: "drinks", label: "Drinks" },
+    { id: "pikles", label: "Pikles" },
+    { id: "namkeen", label: "Namkeen" },
+    { id: "masala", label: "Masala" },
+    { id: "dry fruits", label: "Dry Fruits" },
     { id: "snacks", label: "Snacks" },
-    { id: "desert", label: "Desert" },
-    { id: "dairy", label: "Dairy" },
-    { id: "diet food", label: "Diet Food" },
   ],
 };
 
