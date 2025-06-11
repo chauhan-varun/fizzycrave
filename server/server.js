@@ -57,5 +57,6 @@ app.use("/api/shop/search", shopSearchRouter);
 app.use("/api/shop/review", shopReviewRouter);
 
 app.use("/api/common/feature", commonFeatureRouter);
+app.get("/api/ping", (req, res) => res.send("OK"));
 
 app.listen(PORT);
